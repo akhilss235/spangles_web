@@ -1,0 +1,283 @@
+.sver:hover {
+  border: 2px solid #345261;
+}
+
+
+.card-title {
+  text-align: center;
+  color: #345261;
+
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  text-align: justify;
+
+}
+
+.cardhover:hover {
+  transform: scale(1.1);
+ 
+
+}
+.ss{
+  margin-top: 30px;
+}
+.text1 {
+  font-weight: bold;
+
+  color: #345261;
+  margin-top: 10%;
+  width: 100%;
+}
+.sv {
+  font-weight: bold;
+  /* font-size: 55px; */
+  color: #345261;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.text2 {
+  font-weight: bold;
+  /* font-size: 55px; */
+  color: #345261;
+  margin-top: 35%;
+  margin-bottom: 15%;
+
+}
+
+.text5 {
+  color: #345261;
+  text-align: justify;
+  -moz-text-align-last: start;
+  text-align-last: start;
+  font-size: 1rem;
+}
+
+@media (min-width: 320px) {
+  .text5 {
+    font-size: 0.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text5 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text5 {
+    font-size: 1rem;
+    margin-top: 3%;
+  }
+}
+
+.text3 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #345261;
+  text-align: justify;
+  -moz-text-align-last: start;
+  text-align-last: start;
+}
+
+@media (min-width: 320px) {
+  .text3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text3 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .text3 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text3 {
+    font-size: 8rem;
+  }
+}
+
+.verticalline {
+  height: 25rem;
+}
+
+@media (min-width: 320px) {
+  .verticalline {
+    height: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .verticalline {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .verticalline {
+    height: 30rem;
+  }
+}
+
+.img1 {
+  height: 7rem;
+  width: 7rem;
+}
+
+@media (min-width: 320px) {
+  .img1 {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .img1 {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img1 {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+.img2 {
+  margin-bottom: auto;
+}
+
+
+
+
+
+
+
+.text6 {
+  font-size: 80px;
+  color: #345261;
+  position: relative;
+  margin-top: 30%;
+
+}
+
+
+.text7 {
+  text-align: end;
+  color: #345261;
+
+}
+
+.text8 {
+  font-size: 12px;
+  color: black;
+  margin-top: 1%;
+
+}
+
+/* .text9 {
+    font-size: 80px;
+    color: #345261;
+  } */
+
+
+.text11 {
+  text-align: start;
+  color: #345261;
+
+height: 20px;
+}
+
+
+.card {
+  margin: 0;
+
+  box-shadow: 0px 10px 20px -5px #adadad;
+
+}
+
+.card-img-zoom {
+  overflow: hidden;
+}
+
+.card-img-zoom img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+
+}
+
+.contactss{
+  border: 1px solid #aaa;
+  border-radius: 30px;
+
+}
+.card-img-zoom:hover img {
+  transform: scale(1.1);
+}
+
+
+
+.text13 {
+  color: #345261;
+  position: absolute;
+  left: 25vh;
+  top: 60%;
+  transform: translate(-30%, -70%);
+
+
+}
+
+.bg {
+  height: 300px;
+
+}
+
+/* .text16{
+    text-align: center;
+    color: #345261;
+    font-size: 80px;
+  margin-top: 10%;
+  } */
+.text15 {
+  margin-top: 30%;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.text17 {
+  justify-content: center;
+  text-align: center;
+  color: #345261;
+  font-weight: bold;
+  font-size: 70px;
+ top: 50%;
+
+}
+
+.input1 {
+  margin-top: 30%;
+}
+
+#buttons {
+  color: white;
+  width: 150px;
+  height: 50px;
+}
+
+/* contacts css */
+/*   END forms styling  */

@@ -1,0 +1,123 @@
+/* Prevent user selection on the entire page */
+body {
+   user-select: none;
+   -webkit-user-select: none; 
+   -moz-user-select: none; 
+   -ms-user-select: none;
+ }
+ 
+ .containers {
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   height: 100vh; 
+   width: 100vw; 
+   overflow: hidden; 
+   background-color: white;
+ }
+ 
+ .mask1 {
+   position: relative; /* Needed for the pseudo-element positioning */
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   width: 500px; 
+   height: 300px;
+   overflow: hidden; /* Ensures the pseudo-element doesn’t overflow */
+   padding: 0;  
+ }
+ 
+ .sliding-image {
+   height: auto;
+   width: 500px; 
+   height: 300px;
+
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   position: relative; 
+   z-index: 50;
+ }
+ 
+ .mask1:after {
+   content: "";
+   position: absolute;
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   width: 100%; 
+   height: 100%; 
+   background-image: url('../src/image/water1.png'); /* Use relative path */
+   background-size: cover;
+   animation-name: moveDown1;
+   animation-iteration-count: 1;
+   animation-duration: 5.5s;
+   top: 0;
+   left: 0;
+   z-index: 2; 
+   border-radius: 50%;
+
+ }
+ .mask1:before {
+   border-radius: 50%;
+
+   content: "";
+   position: absolute;
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   width: 100%; 
+   height: 100%; 
+   background-image: url('../src/image/water2.png'); /* Use relative path */
+   background-size: cover;
+   animation-name: moveDown2;
+   animation-iteration-count: 1;
+   animation-duration: 5.5s;
+   top: 0;
+   left: 0;
+   z-index: 2; 
+ }
+
+
+ @keyframes moveDown1 {
+   0% {
+     transform: translateY(400%) translateX(0%) rotate(0deg); /* Start from bottom */
+   }
+   100% {
+     transform: translateY(0%) translateX(0%) rotate(0deg); /* End at top */
+     z-index: 30;
+   }
+ }
+ 
+ /* Keyframes for the second background image (from bottom to top) */
+ @keyframes moveDown2 {
+   0% {
+     transform: translateY(100%) translateX(0%) rotate(0deg); /* Start from bottom */
+   }
+   100% {
+     transform: translateY(0%) translateX(0%) rotate(0deg); /* End at top */
+     z-index: 30;
+   }
+ }
+
+
+ /* @keyframes moveDown {
+   0% {
+     transform: translateX(400%) translateY(0%) rotate(0deg);
+     
+   }
+   100% {
+     transform: translateX(0%) translateY(0%) rotate(0deg);
+     z-index: 30;
+   }
+ }
+ @keyframes moveDown2 {
+   0% {
+     transform: translateX(200%) translateY(0%) rotate(0deg);
+     
+   }
+   100% {
+     transform: translateX(0%) translateY(0%) rotate(0deg);
+     z-index: 30;
+   }
+ } */

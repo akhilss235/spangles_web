@@ -1,0 +1,221 @@
+.boxborder-gradient-1, .boxborder-gradient-2 {
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #345261, white) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  position: relative;
+}
+
+.boxborder-gradient-2 {
+  background: linear-gradient(white, white) padding-box, linear-gradient(to left, #345261, white) border-box;
+  align-items: flex-end;
+}
+
+.header {
+  color: #345261;
+  margin-left: 50px;
+}
+
+.header-right {
+  margin-right: 50px;
+}
+
+.description {
+  margin-left: 0px;
+}
+
+.description-right {
+  margin-right: 50px;
+}
+
+.image {
+  width: 130px;
+  position: absolute;
+  top: -20%;
+}
+
+.image-left {
+  right: 0%;
+}
+
+.image-right {
+  left: 0%;
+  top: -20%;
+}
+
+@media (max-width: 768px) {
+  .boxborder-gradient-1, .boxborder-gradient-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .header, .header-right, .description, .description-right {
+    margin: 10px 0;
+  }
+
+  .image {
+    position: static;
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.boxborders-gradient-3 {
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to left, #345261, white) border-box;
+border: 1px solid transparent;
+}
+
+.boxborders-gradient-3 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+ 
+} 
+
+.boxborders-gradient-4 {
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to bottom, #345261, white) border-box;
+border: 1px solid transparent;
+}
+
+.boxborders-gradient-4 {
+  position: relative;
+  justify-content: start;
+  align-items: start;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  height: 95%;
+ 
+} 
+
+.active-bold {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* Base styles */
+.boxborder-gradient-5, .boxborder-gradient-6 {
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #345261, white) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  position: relative;
+ 
+}
+
+.boxborder-gradient-6 {
+  background: linear-gradient(white, white) padding-box, linear-gradient(to left, #345261, white) border-box;
+  align-items: flex-end;
+}
+
+.header2 {
+  color: #345261;
+  margin-left: 50px;
+ 
+}
+
+.header-right2 {
+  margin-right: 50px;
+}
+
+.description2 {
+  margin-left: 20px;
+ 
+}
+
+.description-right2 {
+  margin-right: 20px;
+
+}
+
+.image2 {
+  width: 130px;
+  position: absolute;
+  top: -30%;
+}
+
+.image-left2 {
+  right: 0%;
+}
+
+.image-right2 {
+  left: 0%;
+  top: -30%;
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .boxborder-gradient-5, .boxborder-gradient-6 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+    
+  }
+  
+  .header2, .header-right2, .description2, .description-right2 {
+    margin: 10px 0;
+    
+  }
+
+  .image2 {
+    position: static;
+    margin: 10px 0;
+  }
+}
+
+.custom-button a {
+  color: #345261;
+}
+
+.custom-button:hover a {
+  color: white;
+}
+@media screen and (max-width:600px) {
+  .cnt-to-expt-cont{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+  }
+  .key-comp-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

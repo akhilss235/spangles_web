@@ -1,0 +1,34 @@
+.menu2{
+    font-size: 20px;
+    margin-left: 110px;
+    /* font-family: Poppins; */
+  }
+  a {
+    color: rgba(52, 82, 97, 1);
+    ;
+    text-decoration: none;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: 0.2s;
+
+    /* font-family: Poppins; */
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(52, 82, 97, 1);
+    /* background-color: green; */
+    transition: 0.5s linear;
+  }
+  a:hover {
+    color: #fff;
+  }
+  a:hover:after {
+    width: 100%;
+  }

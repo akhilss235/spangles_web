@@ -1,0 +1,434 @@
+/* top tampalate animation //////////// */
+.bg-cover {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* TAMPLATE ZOOM ANIMATION  */
+.zoom-in {
+  transform: scale(15);
+  transform-origin: center;
+  transition: transform 0.5s ease-in;
+}
+.contanier {
+  margin-top: 50px;
+  overflow-y: auto; /* Add this line */
+}
+body {
+  overflow-x: hidden;
+}
+
+.wave {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center text vertically */
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+  overflow: hidden; /* Changed from overflow-y: hidden */
+}
+
+.wave:after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  min-height: 135vh;
+  background-image: url(../image/wave2.png);
+  background-size: cover;
+  animation: moveWave 2.5s infinite; /* Adjusted duration for the wave effect */
+}
+
+@keyframes moveWave {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.wave1 {
+  z-index: 2;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wave2 {
+  position: relative; /* Adjusted to avoid overlapping with wave1 */
+  z-index: 2;
+  font-weight: 400; /* Adjusted font-weight for better readability */
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* END TOP ANIMATION  */
+
+/* SCROLL ANIMATION  */
+
+.animatable {
+  visibility: hidden;
+  animation-play-state: paused;
+}
+
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-play-state: running;
+}
+
+@keyframes fadeIn {
+  0%,
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  60% {
+    transform: translateX(20px);
+  }
+
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  60% {
+    transform: translateX(-20px);
+  }
+
+  80% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeBgColor {
+  0%,
+  70% {
+    background: none;
+  }
+
+  100% {
+    background: #345261;
+  }
+}
+
+.animated.animationDelay {
+  animation-delay: 0.4s;
+}
+
+.animated.animationDelayMed {
+  animation-delay: 1.2s;
+}
+
+.animated.animationDelayLong {
+  animation-delay: 1.6s;
+}
+
+.animated.fadeBgColor {
+  animation-name: fadeBgColor;
+}
+
+.animated.bounceIn {
+  animation-name: bounceIn;
+}
+
+.animated.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+.animated.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+.animated.fadeIn {
+  animation-name: fadeIn;
+}
+
+.animated.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animated.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animated.moveUp {
+  animation-name: moveUp;
+}
+
+/* SCROLL ANIMATION END  */
+/*  */
+
+/* CARD ANIMATION 445 page  */
+.anim {
+  height: 500px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.hed {
+  width: 300px;
+  border-radius: 0.1rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin: 0 10px;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 20px -5px #345261;
+}
+
+.hed > .row {
+  color: #345261;
+  flex-wrap: nowrap;
+}
+
+.hed > .row {
+  background-color: white;
+  color: #345261;
+  height: 100px;
+  width: 300px;
+}
+
+.hed > .row > .description {
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description p {
+  color: #345261;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(5) !important;
+}
+
+/* END CARD ANIMATION  */
+
+/* OUR MISSION & VISION    220 page   ANIMATION                     OUR */
+.animatable {
+  visibility: hidden;
+  animation-play-state: paused;
+}
+
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  animation-play-state: running;
+}
+
+@keyframes fadeIn1 {
+  0%,
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp1 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInLeft1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-180px);
+  }
+
+  60% {
+    transform: translateX(20px);
+  }
+
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight1 {
+  0% {
+    opacity: 0;
+    transform: translateX(180px);
+  }
+
+  60% {
+    transform: translateX(-20px);
+  }
+
+  80% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveUp1 {
+  0% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated.animationDelay {
+  animation-delay: 0.4s;
+}
+
+.animated.animationDelayMed {
+  animation-delay: 1.2s;
+}
+
+.animated.animationDelayLong {
+  animation-delay: 1.6s;
+}
+
+.animated.bounceInRight1 {
+  animation-name: bounceInRight1;
+  animation-delay: 3s;
+}
+
+.animated.bounceInLeft1 {
+  animation-name: bounceInLeft1;
+  animation-delay: 3s;
+}
+
+.animated.fadeInUp1 {
+  animation-name: fadeInUp1;
+  animation-delay: 1s;
+}
+
+.animated.moveUp1 {
+  animation-name: moveUp1;
+}

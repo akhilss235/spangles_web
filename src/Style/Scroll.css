@@ -1,0 +1,124 @@
+.animatable {
+
+    visibility: hidden;
+    animation-play-state: paused;
+  }
+  
+  
+  .animated {
+    visibility: visible;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-play-state: running;
+  }
+  
+  
+  @keyframes fadeIn1 {
+  
+    0%,
+    60% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  @keyframes fadeInUp1 {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @keyframes bounceInLeft1 {
+    0% {
+      opacity: 0;
+      transform: translateX(-180px);
+    }
+  
+    60% {
+      transform: translateX(20px);
+    }
+  
+    80% {
+      transform: translateX(-5px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceInRight1 {
+    0% {
+      opacity: 0;
+      transform: translateX(180px);
+    }
+  
+    60% {
+      transform: translateX(-20px);
+    }
+  
+    80% {
+      transform: translateX(5px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes moveUp1 {
+    0% {
+      transform: translateY(40px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  .animated.animationDelay {
+    animation-delay: 0.4s;
+  }
+  
+  .animated.animationDelayMed {
+    animation-delay: 1.2s;
+  }
+  
+  .animated.animationDelayLong {
+    animation-delay: 1.1s;
+  }
+  
+  .animated.bounceInRight1 {
+    animation-name: bounceInRight1;
+    animation-delay: 2s;
+  }
+  
+  .animated.bounceInLeft1 {
+    animation-name: bounceInLeft1;
+    animation-delay: 2s;
+  }
+  
+  .animated.fadeInUp1 {
+    animation-name: fadeInUp1;
+    animation-delay: 1s;
+  }
+  
+  .animated.moveUp1 {
+    animation-name: moveUp1;
+  }

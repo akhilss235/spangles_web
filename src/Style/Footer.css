@@ -1,0 +1,63 @@
+/* .foot {
+ margin: 20px;
+  
+} */
+.footerlogo{
+    text-align: justify;
+    justify-content: start;   
+    margin: 0px;
+    
+}
+.spableabout{
+    text-align: justify;
+    -moz-text-align-last: start;
+    text-align-last: start;
+}
+.footer {
+    margin-top: 20px;
+    margin: 0px;
+    background-color: #345261;
+}
+
+.icons1 {
+    font-size: 40px;
+  
+ 
+}
+
+.icons2 {
+    font-size: 40px;
+
+    margin-left: 20px;
+
+}
+
+.icons3 {
+    font-size: 40px;
+
+    margin-left: 20px;
+
+}
+
+.icons4 {
+    font-size: 35px;
+
+    margin-left: 20px;
+
+}
+.footerend{
+    background-color: rgba(32, 53, 63, 1);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+}
+@media screen and (max-width:600px){
+    .icon-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

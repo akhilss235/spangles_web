@@ -1,0 +1,68 @@
+.bl1{
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 60px;
+    color: #345261;
+    margin-top: 7%;  
+   margin-bottom: 1%;
+}
+.bl2{
+    text-align: center;
+ 
+    color: #345261;
+}
+.bl3{
+   
+    color: #345261; 
+    margin-top: 5%;  
+    margin-bottom: 5%;
+  
+}
+.bl4{
+    color: #345261; 
+    font-size: 18px;
+    margin-left: 30px;
+
+}
+.bl5{
+    margin-top: 5%;  
+    margin-bottom: 5%; 
+    color: #345261;
+    text-align: justify;
+    -moz-text-align-last: start;
+    text-align-last: start;
+}
+.bl6{
+    margin-top: 2%;  
+    margin-bottom: 2%; 
+    color:#345261;
+}
+
+.doderline:hover {
+    border: 2px solid #77caf4; /* Specify border width, style, and color */
+    
+}
+.blog-content-image {
+    width: 100%;
+    max-width: 660px; 
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    border: 0;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.blog-content-iframe {
+    width: 100%;
+    max-width: 660px; /* Adjust this as needed */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintains the 16:9 aspect ratio */
+    border: 0;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

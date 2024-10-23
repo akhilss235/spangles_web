@@ -1,0 +1,123 @@
+.menu2{
+    font-size: 20px;
+    margin-left: 160px;
+  }
+  .menu3{
+    font-size: 20px;
+
+  }
+.ca1{
+    text-align: center;
+    font-weight: bold;
+
+    color: #345261;
+    margin-top: 5%;  
+   margin-bottom: 5%;
+}
+.ca2{
+    margin-top: 5%;  
+    margin-bottom: 5%;
+    justify-content: center;
+    text-align: center;
+}
+.boxss{
+border-left-style: solid ;
+border-left-color: #345261 ;
+border-left-width: 10px ;
+padding: 2%;
+color: #345261;
+ box-shadow: 0px 5px 10px -5px #345261; 
+}
+.ca3{
+   text-align: start; 
+   color: #345261;
+}
+.ca4{
+    text-align: start;
+    color: #345261; 
+ }
+ .ca5{
+
+    margin-left: 3px;
+    color: #345261;
+ }
+ .ca6{
+    color: #345261;
+   font-size: 13px;
+ }
+ .ca7{
+    margin-left: 5px;
+    color: #345261;
+    font-size: 15px;
+ }
+.ca8{
+    margin-left: 70%;
+}
+.ca9{
+    margin-left: 30%;
+
+}
+.ca10{
+    margin-left: 70%;
+}
+.ca11{
+    margin-left: 40%;
+}
+
+
+/* .nav-link {
+    color: #345261; 
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; 
+    padding-bottom: 5px;
+    text-decoration: none; 
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #345261; 
+    font-weight: bold;
+} */
+
+
+
+
+  .hello{
+ 
+    border-bottom: 1.5px solid #ebeef0;
+  }
+
+
+
+  /* Career.css */
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure it takes the full viewport height */
+  margin: 0; /* Remove default margins */
+  background-color: #f5f5f5; /* Optional: Add a background color */
+}
+
+.success-content {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding around the content */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+  background: #fff; /* Optional: Add a background color for the content */
+}
+
+.success-content img {
+  max-width: 100%; /* Ensure images do not overflow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.Su2 {
+  margin-top: 20px;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.Su3 {
+  margin-top: 10px;
+  font-size: 18px; /* Adjust as needed */
+  color: #666; /* Optional: Adjust text color */
+}

@@ -1,0 +1,219 @@
+.about3 {
+  color: #345261;
+  text-align: center;
+  margin-top: 25%;
+  user-select: none;
+}
+.about-head-section{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.stats-container {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-item {
+  margin: 0 20px;
+}
+
+.counter-text {
+  font-weight: bold;
+  color: #A8A8A8;
+  font-size: 50px;
+}
+
+.line-separator {
+  height: 100px;
+  flex-shrink: 0;
+  color: #A8A8A8;
+}
+
+.fullwidth-cover {
+  margin: 0;
+  padding: 0;
+}
+.about-vision-mission{
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  margin: 20px 0px 20px 0px
+}
+.vision-cont,
+.mission-cont{
+  width:50%
+}
+.about5 {
+  color: #FFFFFF;
+  -moz-text-align-last: center;
+  text-align: center;
+}
+
+
+@media screen and (max-width:770px) {
+  .about-img-cont{
+    display: flex;
+    justify-content:center;
+    align-items:center
+  }
+}
+
+@media (max-width: 600px) {
+  .about-head-section{
+    flex-direction: column;
+  }
+  .about3 {
+    margin-top: 10%;
+    font-size: auto;
+    margin-bottom: 10% !important;
+  }
+  
+  .about-vision-mission{
+    flex-direction: column;
+  }
+  .vision-cont,
+  .mission-cont{
+    width:100%
+  }
+  .about5{
+    text-align: justify;
+  }
+  .stats-item {
+    margin: 10px 0;
+  }
+}
+
+.about4 {
+  display:flex;
+  flex-direction: row;
+  padding:10px;
+  background-color: #3E606F;
+  margin-top: 0;
+
+}
+
+.about2 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+
+.about6 {
+  color: #FFFFFF;
+  -moz-text-align-last: start;
+  text-align-last: start;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.about7 {
+  margin-bottom: 5%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+/* //////// */
+
+
+
+.cont {
+  margin-bottom: 20%;
+}
+
+.black-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.gray-box {
+ 
+  border-radius: 20px;
+ 
+}
+
+.jesh {
+  text-align: justify;
+  font-size: 0.6rem; /* Default font size for smallest screens */
+}
+
+.Managing {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  .jesh {
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media (min-width: 900px) {
+  .jesh {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .jesh {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .gray-box {
+    width: 38.5rem;
+    margin-top: 40%;
+    transform: translateX(-35%);
+  }
+}
+@media (min-width: 1024px) {
+  .gray-box {
+    width: 33.5rem;
+    margin-top: 40%;
+    transform: translateX(-35%);
+  }
+}
+
+@media (min-width: 768px) {
+  .gray-box {
+    width: 30.5rem;
+   
+    margin-top: 35%;
+    transform: translateX(-35%);
+  }
+}
+
+
+
+
+
+.buttone:hover {
+  background-color: #3E606F;
+  color: white;
+ 
+}
+
+
+.buttone {
+  color: white;
+  background-color: #3E606F;
+
+}
+
+.btn-outline-custom {
+  border: 1px solid #3E606F;
+  color: #3E606F;
+  background-color: transparent;
+  text-decoration: none;
+}
+.btn-outline-custom:hover {
+  background-color: #3E606F;
+  color: #FFFFFF;
+  text-decoration: none;
+}

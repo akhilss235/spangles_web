@@ -1,0 +1,125 @@
+
+.custom-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px; /* Adjust the font size if needed */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none; 
+}
+
+/* Style for the placeholder text */
+.custom-textarea::placeholder {
+  color: #888; /* Placeholder text color */
+}
+.con1 {
+    text-align: center;
+        /* font-family: Poppins; */
+        font-weight: bold;
+       
+        color: #345261;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    .con2{
+      margin-top: 5%;
+        height: auto;
+       
+        
+    }
+    .con3{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .float-label-control {
+        position: relative;
+        margin-bottom: 1.5em;
+      }
+      
+.float-label-control input::-webkit-input-placeholder {
+    color: #aaa; /* Adjust placeholder color as needed */
+}
+
+.float-label-control input:-moz-placeholder {
+    color: #aaa; 
+}
+
+.float-label-control input::-moz-placeholder {
+    color: #aaa; 
+}
+
+.float-label-control input:-ms-input-placeholder {
+    color: #aaa; 
+}
+
+      
+      .float-label-control input:-webkit-autofill,
+      .float-label-control textarea:-webkit-autofill {
+        background-color: transparent !important;
+        -webkit-box-shadow: 0 0 0 1000px white inset !important;
+        -moz-box-shadow: 0 0 0 1000px white inset !important;
+        box-shadow: 0 0 0 1000px white inset !important;
+      }
+      
+      .float-label-control input,
+      .float-label-control textarea,
+      .float-label-control label {
+        font-size: 1em;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+      }
+      
+      .float-label-control input:focus,
+      .float-label-control textarea:focus {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border-bottom-width: 2px;
+        padding-bottom: 0;
+      }
+      
+      .float-label-control textarea:focus {
+        padding-bottom: 4px;
+        color: #aaa;
+      }
+      
+      .float-label-control input,
+      .float-label-control textarea {
+        display: block;
+        width: 100%;
+        padding: 0.1em 0em 1px 0em;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid #aaa;
+        outline: none;
+        margin: 0px;
+        background: none;
+      }
+      
+  
+
+    
+  
+      
+
+      
+      /*   END forms styling  */
+      #buttonss {
+        color: white;
+        width: 150px;
+        height: 50px;
+    
+      }
+      .das5{
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+    
+      .profilphoto {
+        color: rgba(52, 82, 97, 1);
+        border-style: dotted;
+        border-color: rgba(52, 82, 97, 1);
+        text-align: center;
+        width: 50%;
+    }

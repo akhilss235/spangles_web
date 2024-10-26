@@ -9,7 +9,7 @@ import Blogs from "../src/Componets/Blogs";
 import Websitedesigningdevelopment from "../src/page/Websitedesigningdevelopment";
 import Webapplication from "../src/page/Webapplication";
 
-import React, { useCallback, useEffect, useState } from "react"; // Removed unnecessary import
+import React from "react"; // Removed unnecessary import
 import Services from "../src/Componets/Services";
 import Portfolio from "../src/Componets/Portfolio";
 import Gallery from "../src/Componets/Gallery";

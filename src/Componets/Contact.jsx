@@ -5,93 +5,20 @@ import Footer from './Footer'; // Fixed typo in import
 import { Form, Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import request from '../request';
 import '../Style/Contact.css';
 import Contactus from '../page/Contactus';
 
-const Baseurl = "https://nodejs.spanglesinfotech.com";
-
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
   const ref = useRef(null)
-
   useEffect(() => {
     ref.current.focus();
   }, []);
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const navigate = useNavigate();
-
-  const validateForm = () => {
-    const newErrors = { name: '', email: '', message: '' };
-
-    if (!formData.name) {
-      newErrors.name = 'Name is required';
-    }
-
-    if (!formData.email) {
-      newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
-    }
-
-    if (!formData.message) {
-      newErrors.message = 'Message is required';
-    }
-
-    setErrors(newErrors);
-    return !Object.values(newErrors).some(error => error);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-    setErrors({
-      ...errors,
-      [name]: '' // Clear error for the specific field when user starts typing
-    });
-  };
-
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    
-    if (!validateForm()) {
-      return; // Stop form submission if validation fails
-    }
-
-    try {
-      await request.post("api/enquiries&messages/add/new", formData);
-      setFormSubmitted(true);
-      navigate(`/Successfully`);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setErrors({
-        ...errors,
-        form: "Failed to submit the form. Please try again later."
-      });
-    }
-  };
-
-
-
   const disableRightClick = (event) => {
     event.preventDefault();
   };
 
   return (
-    <>
+    <div >
       <Helmet>
         <title>Contact Us</title>
         <meta 
@@ -104,78 +31,9 @@ function Contact() {
         />
       </Helmet>
 
-      <div className='Contact' onContextMenu={disableRightClick} ref={ref} tabIndex={-1}>
+      <div className='Contact' onContextMenu={disableRightClick} ref={ref} tabIndex={-1} >
         <div className='container' style={{ marginBottom: '10%' }}>
           <h1 className='con1 sv'><b>LET’S GET CONNECTED</b></h1>
-          {/* <div className="container">
-            <div className="contactss mb-5 mt-5 p-5" style={{ justifyContent: "center" }}>
-              <div className="row">
-                <div className="col-lg-6">
-                  <div>
-                    <h6 className="text15">CONTACT US</h6>
-                    <h1 className="text17"><b>Say Hey!</b></h1>
-                  </div>
-                </div>
-                <div className="col-lg-6 mt-5">
-                  <form className="form mt-5 mb-5" onSubmit={handleFormSubmit}>
-                    <Form.Group className="float-label-control mt-5">
-                      <Form.Control 
-                        type="text" 
-                        name="name"
-                        placeholder="Your Name" 
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        isInvalid={!!errors.name}
-                      />
-                      <Form.Control.Feedback type="invalid">
-                        {errors.name}
-                      </Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group className="float-label-control mt-5">
-                      <Form.Control 
-                        type="email" 
-                        name="email"
-                        placeholder="Your Email" 
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        isInvalid={!!errors.email}
-                      />
-                      <Form.Control.Feedback type="invalid">
-                        {errors.email}
-                      </Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group className="float-label-control mt-5">
-                      <Form.Control 
-                        as="textarea" 
-                        rows="2" 
-                        name="message"
-                        placeholder="Your Message" 
-                        className="custom-textarea"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        isInvalid={!!errors.message}
-                      />
-                      <Form.Control.Feedback type="invalid">
-                        {errors.message}
-                      </Form.Control.Feedback>
-                    </Form.Group>
-                    <div className="d-flex justify-content-end">
-                      <Button 
-                        type="submit"
-                        id="buttons"
-                        className="mt-5 mb-5" 
-                        style={{ color: 'white', backgroundColor: '#345261' }}
-                      >
-                        Send Message
-                      </Button>
-                    </div>
-                    {errors.form && <p className="error">{errors.form}</p>}
-                    {formSubmitted && <p className="success">Your message has been sent successfully!</p>}
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <Contactus />
           <div className='row'>
             <div className='col-lg-6'>
@@ -213,7 +71,7 @@ function Contact() {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -28,7 +28,7 @@ import { IoTimeOutline } from "react-icons/io5";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Helmet } from "react-helmet";
 import { Form, Button } from 'react-bootstrap';
-import Contactus from "../page/Contactus";
+import Contactushomepage from "../page/Contactushomepage";
 const Baseurl = "https://nodejs.spanglesinfotech.com";
 
 const Home = () => {
@@ -570,7 +570,7 @@ const Home = () => {
             </div>
           </div>
           <h1 className="sv  animatable fadeInDown" style={{ marginBottom: '5%', marginTop: '15%' }}><b>LET’S GET CONNECTED</b>    </h1>
-<Contactus />
+<Contactushomepage />
           {/* <div className="container">
             <div className="contactss mb-5 mt-5 p-5" style={{ justifyContent: "center" }}>
             <div className="row">

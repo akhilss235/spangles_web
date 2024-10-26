@@ -1,11 +1,11 @@
-import React, { useState, useEffect,useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import request from '../request';
 import '../Style/Contact.css';
 
-const Contactus = () => {
+const Contactushomepage = () => {
 
 
     const [formData, setFormData] = useState({
@@ -59,12 +59,9 @@ const Contactus = () => {
             setErrors(prev => ({ ...prev, form: 'Failed to submit the form. Please try again later.' }));
         }
     };
-    const ref = useRef(null)
-    useEffect(() => {
-      ref.current.focus();
-    }, []);
+
     return (
-        <div  ref={ref} tabIndex={-1}>
+        <div >
             <div className='Contact'  >
                 <div className="container">
                     <div className="contactss mb-5 mt-5 p-5">
@@ -151,4 +148,6 @@ const Contactus = () => {
     );
 };
 
-export default Contactus;
+
+
+export default Contactushomepage

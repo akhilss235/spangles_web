@@ -6,6 +6,7 @@ import Footer from '../Componets/Footer';
 import request from "../request";
 import { IoTimeOutline } from "react-icons/io5";
 import slidingImage from '../image/animation-01.png';
+import { Container } from "react-bootstrap";
 
 const Baseurl = "https://nodejs.spanglesinfotech.com";
 
@@ -80,34 +81,35 @@ function Artificial() {
                             <IoTimeOutline /> <span className="bl4">{new Date(blog.posted_on).toLocaleDateString()} </span>
                         </span>
                     </IconContext.Provider>
-                    <div >
-                        <div style={{
-                            width: '100%',
-                            height: '600px',
-                            overflow: 'hidden', // Hide overflow if image is larger than container
-                            position: 'relative',
-                            borderRadius: '30px', // Needed to position the image absolutely inside the container
-                            backgroundSize: 'cover',
-                            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', // Shadow effect
+                    <Container>
 
+
+                        <div style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            width: '100%',
+                            height: '700px',
+
+                            padding: '20px',
+                            backgroundColor: '#f9f9f9'
                         }}>
                             <img
                                 src={`${Baseurl}/${blog.image}`}
                                 alt={blog.title}
                                 style={{
-                                    width: 'auto',
-                                    minHeight:'600px', // Make image width match container width
-                                    height: 'auto', // Maintain aspect ratio
-                                    position: 'absolute', // Position image absolutely within container
-                                    top: '50%', // Center image vertically
-                                    left: '50%',
-                                    transform: 'translate(-50%, -50%)', // Center image horizontally
-                                    borderRadius: '30px',
-                                    backgroundSize: 'cover'
+                                    height: '700px',
+
+                                    width: '100%',
+                                    borderRadius: '8px',
+                                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
                                 }}
                             />
                         </div>
-                    </div>
+
+
+
+                    </Container>
 
 
 

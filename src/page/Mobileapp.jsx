@@ -25,6 +25,7 @@ import '../Style/Services.css'
 import Footer from '../Componets/Footer';
 import { Container } from 'react-bootstrap';
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import Servicesbuttone from '../Button/Servicesbuttone';
 
 
 function Mobileapp() {
@@ -95,10 +96,11 @@ function Mobileapp() {
                             Empowering Innovation: Experience Our Mobile App
                             Development Services.
                         </h4>
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
+                        {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
                             <button type="button" class="btn btn-light custom-buttons " style={{ width: 'auto', padding: '10px', marginLeft: '3%' }}>
                                 Connect to an Expert now
-                            </button></a>
+                            </button></a> */}
+                            <Servicesbuttone />
 
                     </div>
                 </Container>

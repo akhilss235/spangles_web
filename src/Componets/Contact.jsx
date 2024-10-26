@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import { IconContext } from 'react-icons';
 import { IoMdCall, IoIosMail } from 'react-icons/io';
 import Footer from './Footer'; // Fixed typo in import
@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import request from '../request';
 import '../Style/Contact.css';
+import Contactus from '../page/Contactus';
 
 const Baseurl = "https://nodejs.spanglesinfotech.com";
 
@@ -22,7 +23,11 @@ function Contact() {
     email: '',
     message: ''
   });
+  const ref = useRef(null)
 
+  useEffect(() => {
+    ref.current.focus();
+  }, []);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const navigate = useNavigate();
 
@@ -99,10 +104,10 @@ function Contact() {
         />
       </Helmet>
 
-      <div className='Contact' onContextMenu={disableRightClick}>
+      <div className='Contact' onContextMenu={disableRightClick} ref={ref} tabIndex={-1}>
         <div className='container' style={{ marginBottom: '10%' }}>
           <h1 className='con1 sv'><b>LET’S GET CONNECTED</b></h1>
-          <div className="container">
+          {/* <div className="container">
             <div className="contactss mb-5 mt-5 p-5" style={{ justifyContent: "center" }}>
               <div className="row">
                 <div className="col-lg-6">
@@ -170,7 +175,8 @@ function Contact() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <Contactus />
           <div className='row'>
             <div className='col-lg-6'>
               <span className='d-flex justify-content-center'>

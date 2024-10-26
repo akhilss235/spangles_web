@@ -68,7 +68,7 @@ const Blogs = () => {
         <div className="container">
           <div className="row mt-5 mb-5">
             {blogs.map((blog) => (
-              <div className="col-lg-3 col-md-6 mb-4" key={blog._id}>
+              <div className="col-lg-zzzzzzzzzzzzzzzzzzzzzzzzzz col-md-6 mb-4" key={blog._id}>
                 <a href={`/Artificial/${blog._id}`} style={{ textDecoration: 'none' }}>
 
                   <div className="card doderline" >

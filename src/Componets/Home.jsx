@@ -28,77 +28,19 @@ import { IoTimeOutline } from "react-icons/io5";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Helmet } from "react-helmet";
 import { Form, Button } from 'react-bootstrap';
+import Contactus from "../page/Contactus";
 const Baseurl = "https://nodejs.spanglesinfotech.com";
 
 const Home = () => {
+  const [errors, setErrors] = useState({});
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
 
-  const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const [formSubmitted, setFormSubmitted] = useState(false);
   const navigate = useNavigate();
 
-  const validateForm = () => {
-    const newErrors = { name: '', email: '', message: '' };
+ 
 
-    if (!formData.name) {
-      newErrors.name = 'Name is required';
-    }
+ 
 
-    if (!formData.email) {
-      newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
-    }
-
-    if (!formData.message) {
-      newErrors.message = 'Message is required';
-    }
-
-    setErrors(newErrors);
-    return !Object.values(newErrors).some(error => error);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-    setErrors({
-      ...errors,
-      [name]: '' // Clear error for the specific field when user starts typing
-    });
-  };
-
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    
-    if (!validateForm()) {
-      return; // Stop form submission if validation fails
-    }
-
-    try {
-      await request.post("api/enquiries&messages/add/new", formData);
-      setFormSubmitted(true);
-      navigate(`/Successfully`);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setErrors({
-        ...errors,
-        form: "Failed to submit the form. Please try again later."
-      });
-    }
-  };
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -628,8 +570,8 @@ const Home = () => {
             </div>
           </div>
           <h1 className="sv  animatable fadeInDown" style={{ marginBottom: '5%', marginTop: '15%' }}><b>LET’S GET CONNECTED</b>    </h1>
-
-          <div className="container">
+<Contactus />
+          {/* <div className="container">
             <div className="contactss mb-5 mt-5 p-5" style={{ justifyContent: "center" }}>
             <div className="row">
                 <div className="col-lg-6">
@@ -697,7 +639,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         
           <Footer />
         </div>

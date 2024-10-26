@@ -19,6 +19,9 @@ import { useNavigate } from "react-router-dom";
 
 import { Container } from 'react-bootstrap';
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import Buttonecontact from '../Button/Buttonecontact';
+import ScheduleDemo from '../Button/ScheduleDemo';
+import Buynowbuttone from '../Button/Buynowbuttone';
 function Churchmanagement() {
     const {mobileView} = useMobileHooks()
     const [selectedType, setSelectedType] = useState('Types1');
@@ -71,11 +74,12 @@ function Churchmanagement() {
                             By centralizing these functions into one system, ChMS streamlines administrative tasks, enhances communication within the congregation, and facilitates better organization and planning for church leaders. Additionally, ChMS often offers tools for online giving, website integration, and reporting, enabling churches to
                             adapt to the digital age and better serve their communities
                         </p>
-                        <button type="button" className="btn btn-outline-custom" style={{ width: '200px', padding: '10px' }}>
+                        {/* <button type="button" className="btn btn-outline-custom" style={{ width: '200px', padding: '10px' }}>
                             <a href="Contact" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 Contact us
                             </a>
-                        </button>
+                        </button> */}
+                        <Buttonecontact />
                     </div>
 
                 </div>
@@ -88,11 +92,11 @@ function Churchmanagement() {
                             Are you in search of the perfect church management software to streamline
                             your ministry’s operations and enhance engagement with your congregation?
                         </h4>
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
+                        {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
                             <button type="button" class="btn btn-light custom-buttons " style={{ width: '300px', padding: '10px', marginLeft: '3%' }}>
                                 Schedule a demo
-                            </button></a>
-
+                            </button></a> */}
+<ScheduleDemo />
                     </div>
                 </Container>
             </div>
@@ -210,11 +214,11 @@ function Churchmanagement() {
                         <p className='mt-3'>
                             Church management software works by providing a centralized platform for churches to manage various aspects of their operations, including member management, event planning, donations tracking, communication, and more. It typically operates as a cloud-based solution, allowing users to access the software from any internet-enabled device. Users can input and update member information, track attendance and participation in events, manage volunteer schedules, process donations, and communicate with congregation members through email or messaging features. Some church management software also integrates with other tools and platforms, such as accounting software or online payment processors, to streamline workflows and enhance functionality. Overall, church management software simplifies administrative tasks, improves organization, and fosters better communication and engagement within the church community.
                         </p>
-                        <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
+                        {/* <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
                 <a href="Contact" style={{textDecoration: 'none', color: 'inherit'}}>
                   Contact us To Buy Now
                 </a>
-              </button>
+              </button> */}<Buynowbuttone />
                    
 
                     </div>

@@ -1,15 +1,5 @@
 import React, { useState } from 'react';
-
-import o1 from '../image/01.png';
-import o2 from '../image/02.png';
-import o3 from '../image/03.png';
-import o4 from '../image/04.png';
-import o5 from '../image/05.png';
-import o6 from '../image/06.png';
-import o7 from '../image/07.png';
 import Sv from '../image/web.png';
-
-
 import o11 from '../image/1.png';
 import o12 from '../image/2.png';
 import o13 from '../image/3.png';
@@ -17,12 +7,6 @@ import o14 from '../image/4.png';
 import o15 from '../image/5.png';
 import o16 from '../image/6.png';
 import o17 from '../image/7.png';
-
-import o18 from '../image/8.png';
-import o19 from '../image/9.png';
-import o20 from '../image/10.png';
-import o21 from '../image/11.png';
-
 import Group111 from '../image/Group10.png';
 import Group222 from '../image/Group12.png';
 import Group333 from '../image/Group13.png';
@@ -33,12 +17,13 @@ import Group777 from '../image/Group17.png';
 import Group888 from '../image/Group18.png';
 import Group999 from '../image/Group19.png';
 import Group100 from '../image/Group20.png';
-
 import '../Style/Services.css'
 import Footer from '../Componets/Footer';
 import { Container } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Servicesbuttone from '../Button/Servicesbuttone';
+
 import { useMobileHooks } from '../hooks/useMobileHooks';
 function Webapplication() {
     const {mobileView} = useMobileHooks();
@@ -102,10 +87,15 @@ function Webapplication() {
                         <h4 style={{ color: 'white', textAlign:mobileView ? "center" : "" }} className='mt-1'>
                             Ready to elevate your online presence with the best web application development services in the industry?
                         </h4>
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} className='mt-1'>
-                            <button type="button" className="btn btn-light custom-buttons " style={{ width: 'auto', padding: '10px', marginLeft: '3%' }}>
+                        
+                            {/* <button type="button" className="btn btn-light custom-buttons " style={{ width: 'auto', padding: '10px', marginLeft: '3%', textAlign:mobileView ? "center" : ""}}>
                                 Connect to an Expert now
-                            </button></a>
+                            </button> */}
+<Servicesbuttone />
+
+
+
+                         
 
                     </div>
                 </Container>

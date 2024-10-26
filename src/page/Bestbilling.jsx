@@ -7,8 +7,6 @@ import o5 from '../image/05.png';
 import o6 from '../image/06.png';
 import o7 from '../image/07.png';
 import o8 from '../image/08.png';
-import o9 from '../image/09.png';
-import o10 from '../image/1010.png';
 import Sv from '../image/bb.png';
 import sv from '../image/bb2.png';
 import { useNavigate } from "react-router-dom";
@@ -16,8 +14,11 @@ import { Helmet } from "react-helmet";
 
 import '../Style/Services.css'
 import Footer from '../Componets/Footer';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import Buttonecontact from '../Button/Buttonecontact';
+import ScheduleDemo from '../Button/ScheduleDemo';
+import Buynowbuttone from '../Button/Buynowbuttone';
 function Bestbilling() {
     const {mobileView} = useMobileHooks()
     const [selectedType, setSelectedType] = useState('Types1');
@@ -69,11 +70,13 @@ Billing software for small business, Online invoicing software" />
                             Moreover, billing software provides valuable insights into the financial health of a business through reporting and analytics tools. Users can generate detailed reports on outstanding invoices, payment histories, and revenue trends, empowering them to make informed decisions to optimize cash flow and drive business growth. By streamlining billing processes and improving accuracy and efficiency, billing software enables businesses to focus on delivering exceptional products and services while maintaining strong financial control.
                         </p>
 
-                        <button type="button" className="btn btn-outline-custom" style={{ width: '200px', padding: '10px' }}>
+                        {/* <button type="button" className="btn btn-outline-custom" style={{ width: '200px', padding: '10px' }}>
                             <a href="Contact" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 Contact Us
                             </a>
-                        </button>                    </div>
+                        </button>    */}
+                        <Buttonecontact />
+                                         </div>
 
                 </div>
             </Container>
@@ -86,10 +89,11 @@ Billing software for small business, Online invoicing software" />
                         <h4 style={{ color: 'white', textAlign:mobileView ? "center" : "" }} className='mt-1'>
                             Discover the best billing software to streamline your invoicing process.
                         </h4>
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
+                        {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
                             <button type="button" class="btn btn-light custom-buttons " style={{ width: '300px', padding: '10px', marginLeft: '3%' }}>
                                 Schedule a demo
-                            </button></a>
+                            </button></a> */}
+                            <ScheduleDemo />
                     </div>
                 </Container>
             </div>
@@ -190,11 +194,12 @@ Billing software for small business, Online invoicing software" />
                             reports on invoicing activity and financial performance, providing insights for informed
                             decision-making.
                         </p>
-                        <button type="button" className="btn btn-outline-custom" style={{ width: '200px', padding: '10px' }}>
+                        {/* <button type="button" className="btn btn-outline-custom" style={{ width: '200px', padding: '10px' }}>
                             <a href="Contact" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 Contact Us To Buy Now
                             </a>
-                        </button>
+                        </button> */}
+                        <Buynowbuttone />
                     </div>
                     <div className='col-sm-5'>
                         <img

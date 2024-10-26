@@ -17,9 +17,11 @@ import { Container } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import ScheduleDemo from '../Button/ScheduleDemo';
+import Buynowbuttone from '../Button/Buynowbuttone';
 
 function Tuitionmanagement() {
-    const {mobileView} = useMobileHooks()
+    const { mobileView } = useMobileHooks()
     const [selectedType, setSelectedType] = useState('Types1');
 
     const handleTypeClick = (type) => {
@@ -65,11 +67,12 @@ function Tuitionmanagement() {
                         <p style={{ marginTop: '20px', width: '90%' }}>
                             Tuition management software is a digital solution designed to streamline and automate the administrative tasks associated with managing tuition payments and student accounts in educational institutions. It facilitates the billing, invoicing, payment processing, and financial reporting processes, allowing schools, colleges, and universities to efficiently manage tuition fees, scholarships, financial aid, and student billing records. Additionally, tuition management software often integrates with student information systems (SIS) and accounting software to ensure seamless data flow and accurate financial management across the institution.
                         </p>
-                        <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
-                <a href="Contact" style={{textDecoration: 'none', color: 'inherit'}}>
-                Contact Us 
-                </a>
-              </button>
+                        {/* <button type="button" className="btn btn-outline-custom" style={{ width: '200px', padding: '10px' }}>
+                            <a href="Contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                Contact Us
+                            </a>
+                        </button> */}
+                        <Buynowbuttone />
                     </div>
 
                 </div>
@@ -80,15 +83,17 @@ function Tuitionmanagement() {
                     <div className='d-flex justify-content-between p-3 cnt-to-expt-cont'>
 
 
-                        <h4 style={{ color: 'white', textAlign:mobileView ? "center" : "" }} className='mt-1'>
+                        <h4 style={{ color: 'white', textAlign: mobileView ? "center" : "" }} className='mt-1'>
                             Searching for tuition management software to improve administrative efficiency?                                                      </h4>
 
 
 
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
+                        {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
                             <button type="button" class="btn btn-light custom-buttons " style={{ width: '300px', padding: '10px', marginLeft: '3%' }}>
                                 Schedule a demo
-                            </button></a>
+                            </button></a> */}
+                        <ScheduleDemo />
+
                     </div>
                 </Container>
             </div>
@@ -175,12 +180,12 @@ function Tuitionmanagement() {
                         <p className='mt-3'>
                             Tuition management software simplifies tuition fee management by automating administrative tasks. It collects student information and calculates tuition fees based on enrollment details and financial aid. The software generates invoices and payment plans tailored to each student. Payments can be made through various channels, and the software tracks and updates payment statuses accordingly. Additionally, it provides reporting and communication features to facilitate financial transparency and efficient communication with students and parents.
                         </p>
-                        <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
+                        {/* <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
                 <a href="Contact" style={{textDecoration: 'none', color: 'inherit'}}>
                 Contact Us To Buy Now
                 </a>
-              </button>
-
+              </button> */}
+                        <Buynowbuttone />
 
                     </div>
                     <div className='col-sm-5'>

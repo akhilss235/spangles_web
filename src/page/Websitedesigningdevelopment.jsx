@@ -34,6 +34,8 @@ import { useNavigate } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 import { Helmet } from "react-helmet";
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import Servicesbuttone from '../Button/Servicesbuttone';
+import Buttonecontact from '../Button/Buttonecontact';
 
 function Websitedesigningdevelopment() {
   const {mobileView} = useMobileHooks();
@@ -46,9 +48,9 @@ function Websitedesigningdevelopment() {
 
   const navigate = useNavigate();
 
-  const Contact = () => {
-    navigate(`/Contact`);
-  };
+  // const Contact = () => {
+  //   navigate(`/Contact`);
+  // };
   const disableRightClick = (event) => {
     event.preventDefault();
   };
@@ -84,11 +86,12 @@ function Websitedesigningdevelopment() {
               Spangles Infotech is a leading website designing and development company in Nagercoil, a city in the Kanyakumari district of India. Our company is renowned for its expertise in creating high-quality, visually appealing, and user-friendly websites. We caters to a diverse range of clients, providing tailored solutions that meet the unique needs and goals of each business. We earned a reputation for excellence in the field of web design and development due to its innovative approach, high-quality services, and customer-centric focus.
 
               </p>
-              <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
+              {/* <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
                 <a href="Contact" style={{textDecoration: 'none', color: 'inherit'}}>
                   Contact us
                 </a>
-              </button>
+              </button> */}
+              <Buttonecontact />
             </div>
             <div style={{ textAlign: 'center', marginTop: '100px', color: '#345261', marginBottom: '100px' }}>
               <h2><b>Our services likely encompass various aspects of web design, including</b></h2>
@@ -208,11 +211,11 @@ function Websitedesigningdevelopment() {
               <h4 style={{ color: 'white', textAlign:mobileView ? "center" : "" }} className='mt-1'>
               Looking for Expert Web Designers and Developers to Create Your Perfect Website?
                 </h4>
-              <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
+              {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
                 <button type="button" className="btn btn-light custom-buttons " style={{ width: 'auto', padding: '10px', marginLeft: '3%', justifyContent: 'end', justifyContent: 'end' }}>
                   Connect to an Expert now
-                </button></a>
-
+                </button></a> */}
+<Servicesbuttone />
 
 
             </div>

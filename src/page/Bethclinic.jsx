@@ -17,6 +17,9 @@ import { Container } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import Buttonecontact from '../Button/Buttonecontact';
+import ScheduleDemo from '../Button/ScheduleDemo';
+import Buynowbuttone from '../Button/Buynowbuttone';
 
 function Bethclinic() {
     const {mobileView} = useMobileHooks()
@@ -66,12 +69,12 @@ function Bethclinic() {
                         <p style={{ width: '90%' }}>
                             Experience the Best Clinical Management Software with our Clinical Management Software.  Clinical Management Software CMS is designed to provide healthcare facilities with an integrated, efficient, and user-friendly platform for managing all aspects of clinical operations. Our software aims to enhance patient care, streamline administrative processes, and improve overall operational efficiency.
                         </p>
-                        <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
+                        {/* <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
                 <a href="Contact" style={{textDecoration: 'none', color: 'inherit'}}>
                   Contact us
                 </a>
-              </button>
-        
+              </button> */}
+        <Buttonecontact />
                     </div>
 
                 </div>
@@ -85,10 +88,10 @@ function Bethclinic() {
                         <h4 style={{ color: 'white', textAlign:mobileView ? "center" : "" }}  className='mt-1' >
                             Are you in search of the top clinical management software available?
                         </h4>
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
+                        {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
                             <button type="button" class="btn btn-light custom-buttons " style={{ width: '300px', padding: '10px', marginLeft: '3%' }}>
                                 Schedule a demo
-                            </button></a>
+                            </button></a> */}<ScheduleDemo />
                     </div>
                 </Container>
             </div>
@@ -184,11 +187,11 @@ function Bethclinic() {
                         <p className='mt-3'>
                             Clinical Management Software streamlines healthcare operations by digitizing administrative tasks like patient registration, appointment scheduling, and billing. Healthcare providers document patient encounters and treatment plans directly into the system, ensuring comprehensive and accurate electronic health records (EHR). The software offers decision support tools, such as medication alerts and clinical guidelines, to assist providers in making informed decisions. Automated billing processes generate invoices and submit insurance claims, reducing paperwork and billing errors. Reporting and analytics tools provide insights into clinic performance, enabling continuous improvement in patient care and operational efficiency.                        </p>
                    
-                            <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
+                            {/* <button type="button" className="btn btn-outline-custom" style={{width: '200px', padding: '10px'}}>
                 <a href="Contact" style={{textDecoration: 'none', color: 'inherit'}}>
                 Contact Us To Buy Now
                 </a>
-              </button>
+              </button> */}<Buynowbuttone />
 
                     </div>
                     <div className='col-sm-5'>
@@ -200,18 +203,6 @@ function Bethclinic() {
                         />
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

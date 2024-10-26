@@ -1,15 +1,6 @@
 import React, { useState } from 'react';
-
-import o1 from '../image/01.png';
-import o2 from '../image/02.png';
-import o3 from '../image/03.png';
-import o4 from '../image/04.png';
-import o5 from '../image/05.png';
-import o6 from '../image/06.png';
-import o7 from '../image/07.png';
 import Sv from '../image/ecom.png';
 import Ss from '../image/ecom2.png';
-
 import { useNavigate } from "react-router-dom";
 import Group111 from '../image/Group31.png';
 import Group222 from '../image/Group32.png';
@@ -20,13 +11,12 @@ import Group666 from '../image/Group36.png';
 import Group777 from '../image/Group37.png';
 import Group888 from '../image/Group38.png';
 import Group999 from '../image/Group40.png';
-// import Group100 from '../image/Group40.png';
 import { Helmet } from "react-helmet";
-
 import '../Style/Services.css'
 import Footer from '../Componets/Footer';
 import { Container } from 'react-bootstrap';
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import Servicesbuttone from '../Button/Servicesbuttone';
 function Ecommerce() {
     
     const {mobileView} = useMobileHooks()
@@ -37,9 +27,6 @@ function Ecommerce() {
     };
     const navigate = useNavigate();
 
-    const Contact = () => {
-        navigate(`/Contact`);
-    };
 
     const disableRightClick = (event) => {
         event.preventDefault();
@@ -94,10 +81,11 @@ function Ecommerce() {
                             Start your E-Commerce Journey with the best
                             E-Commerce development company!
                         </h4>
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261',  textAlign:mobileView ? "center" : "" }} >
+                        {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261',  textAlign:mobileView ? "center" : "" }} >
                             <button type="button" class="btn btn-light custom-buttons " style={{ width: 'auto', padding: '10px', marginLeft: '3%' }}>
                                 Connect to an Expert now
-                            </button></a>
+                            </button></a> */}
+                            <Servicesbuttone />
                     </div>
                 </Container>
             </div>

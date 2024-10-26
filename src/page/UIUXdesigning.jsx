@@ -41,6 +41,7 @@ import '../Style/Services.css'
 import Footer from '../Componets/Footer';
 import { Container } from 'react-bootstrap';
 import { useMobileHooks } from '../hooks/useMobileHooks';
+import Servicesbuttone from '../Button/Servicesbuttone';
 function UIUXdesigning() {
     const {mobileView} = useMobileHooks();
     const [selectedType, setSelectedType] = useState('Types1');
@@ -113,12 +114,12 @@ function UIUXdesigning() {
                             Empower your brand with the power of intuitive
                             design – choose our best UI/UX designing services
                         </h4>
-                        <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
+                        {/* <a href="Contact" style={{ textDecoration: 'none', color: '#345261', textAlign:mobileView ? "center" : "" }} >
                             <button type="button" class="btn btn-light custom-buttons " style={{ width: 'auto', padding: '10px', marginLeft: '3%' }}>
                                 Connect to an Expert now
                             </button>
-                        </a>
-
+                        </a> */}
+<Servicesbuttone />
 
                     </div>
                 </Container>

@@ -12,7 +12,7 @@ function Buttonecontact() {
         <div>
             <button 
                 type="button" 
-                className="btn btn-outline-custom   s" 
+                className="btn btn-outline-custom" 
                 style={{ width: '200px', padding: '10px' }} 
                 onClick={handleContactUs}
             >

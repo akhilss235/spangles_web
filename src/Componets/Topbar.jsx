@@ -54,9 +54,6 @@ const Topbar = ({ children }) => {
                       ))||(path === '/Career' && (
                         location.pathname.startsWith('/Designer')
                         || location.pathname.startsWith('/Development')
-                        // || location.pathname.startsWith('/Designpositions')
-                        // || location.pathname.startsWith('/Softwarepositions')
-                        // || location.pathname.startsWith('/Marketing')
                       ))||
                       (path === '/Blogs' && (
                         location.pathname.startsWith('/Sql')

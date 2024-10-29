@@ -33,14 +33,7 @@ const Baseurl = "https://nodejs.spanglesinfotech.com";
 
 const Home = () => {
   const [errors, setErrors] = useState({});
-
-
   const navigate = useNavigate();
-
- 
-
- 
-
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -60,14 +53,13 @@ const Home = () => {
       setErrors("Failed to fetch blogs. Please try again later.");
     }
   };
-
-
-  
-
   const handleBlogClick = (id) => {
     navigate(`/Artificial/${id}`);
   };
 
+
+
+  
   const [scrollY, setScrollY] = useState(0);
   const part1Ref = useRef(null);
   const part2Ref = useRef(null);

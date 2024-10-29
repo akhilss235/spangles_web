@@ -158,7 +158,7 @@ const Home = () => {
       color: color1,
     }}
   >
-    Brighten your business with our digital world
+    Brighten your business with our digital worldb
   </h1>
   <p
     className="wave2"

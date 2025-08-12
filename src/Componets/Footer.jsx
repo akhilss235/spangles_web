@@ -175,7 +175,7 @@ function Footer() {
 
               </h6>
               <h6 style={{ color: "white", marginTop: '15px' }}>
-                Gmail : @gmail.com 
+                Gmailhgvhgvghvh : @gmail.com 
               
 
               </h6>

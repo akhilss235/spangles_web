@@ -175,7 +175,7 @@ function Footer() {
 
               </h6>
               <h6 style={{ color: "white", marginTop: '15px' }}>
-                Gmail : spanglesinfotech@gmail.com 
+                Gmail : @gmail.com 
               
 
               </h6>
@@ -188,6 +188,7 @@ function Footer() {
             2024 © spanglesinfotech.com. All rights reserved.
           </h6>
         </div>
+        
       </div>
     </>
   );
